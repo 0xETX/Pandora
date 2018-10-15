@@ -1,5 +1,4 @@
 #Made by GlobalPandemic
-#Only scan with permission!
 
 #Imports
 import socket
