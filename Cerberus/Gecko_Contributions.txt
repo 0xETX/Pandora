@@ -1,5 +1,5 @@
 Created by: Global-Voltage
-Contributions by: null
+Contributions by: GlobalPandemic
 
 =================================================
 HISTORY
@@ -8,4 +8,4 @@ HISTORY
 DATE          USER             ACTION
 -------------------------------------------------
 2018/10/15  - Global-Voltage - Createed gecko.py
- 
+2018/10/17  - GlobalPandemic - Added an infite loop for line 39 onwards
