@@ -36,24 +36,23 @@ def secure_hash (crypto):
 	
 	
 print("							WELCOME TO CERBERUS")
+while True:
+	#!!!SLIDE NUMBER 27 IN MODULE 5 CAN SOLVE THE ISSUE BELOW!!!
 
-#!!!SLIDE NUMBER 27 IN MODULE 5 CAN SOLVE THE ISSUE BELOW!!!
+	user_selection = eval(input("Please select if you would like to encrypt [0] decrypt [1] or hashed with SHA-256 [2]:"))
 
-user_selection = eval(input("Please select if you would like to encrypt [0] decrypt [1] or hashed with SHA-256 [2]:"))
+	if user_selection == 0:
+		user_input = str(input("Please enter a phrase you would like to have encrypted:"))
+		caeser_encrypt(user_input)
+	elif user_selection == 1:
+		user_input = str(input("Please enter a phrase you would like to have decrypted:"))
+		caeser_decrypt(user_input)
+	elif user_selection == 2:
+		user_input = str(input("Please enter a phrase you would like to have hashed with SHA-256:"))
+		secure_hash(user_input)
+	else:
+		print("Please select a number off of the menu")
 
-if user_selection == 0:
-	user_input = str(input("Please enter a phrase you would like to have encrypted:"))
-	caeser_encrypt(user_input)
-elif user_selection == 1:
-	user_input = str(input("Please enter a phrase you would like to have decrypted:"))
-	caeser_decrypt(user_input)
-elif user_selection == 2:
-	user_input = str(input("Please enter a phrase you would like to have hashed with SHA-256:"))
-	secure_hash(user_input)
-else:
-	print("")
-print("Please select a number off the menu")
-#need to have restart
+	#--------------------------------------------------------------------------------------
+	#								TESTING AREA DOWN HERE
 
-#--------------------------------------------------------------------------------------
-#								TESTING AREA DOWN HERE
