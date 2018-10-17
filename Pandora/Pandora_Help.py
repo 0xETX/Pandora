@@ -2,7 +2,11 @@
 #This script is intended to be the main front of Pandora.
 #Subject to change.
 
+#This method is used for \Help.
+#Contains details on each program.
+#Please update regularly.
 def Help(progChoice):
+	#PR_Alpha Description
 	if("1" in progChoice):
 		print('''
 ________________     _____________       ______         
@@ -46,6 +50,7 @@ This program uses Window's batch, so this feature currently only works with Wind
 		wait = input("\nPress enter to exit the help menu.")
 		return
 	
+#Loop for program choice
 while True:
 	progChoice = input("\nPlease select an option using ONLY the number provided.\n1 - PR_Alpha\n2 - Cerberus\n3 - Gecko\nUse \\help with the number for info and useage on program (i.e. \help 1).\n")
 	if(progChoice == 1):
