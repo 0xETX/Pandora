@@ -8,4 +8,4 @@ HISTORY
 DATE          USER             ACTION
 -------------------------------------------------
 2018/10/15  - GlobalPandemic - Uploaded v4.0 -> Initial public release
-2018/10/17  - GlobalPandemic - Fixed a Ping Sweep exploit which allowed command line injections, renamed PR_Alpha4.py to PR_Alpha.py,                                      converted tabs to spaces
+2018/10/17  - GlobalPandemic - Fixed a Ping Sweep exploit which allowed command line injections, renamed PR_Alpha4.py to PR_Alpha.py, converted tabs to spaces
