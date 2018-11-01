@@ -8,3 +8,4 @@ HISTORY
 DATE          USER             ACTION
 -------------------------------------------------
 2018/10/30  - GlobalPandemic - Initial Creation
+2018/11/01  - GlobalPandemic - Added comments, renamed method 'WebSearch' -> 'DotSearch', fixed header text in append file, additional print statements
