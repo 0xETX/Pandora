@@ -1,8 +1,10 @@
+#Made by GlobalPandemic
+
 import re
 
 #Methods
 #Website Search
-def WebSearch(fileReadString):
+def DotSearch(fileReadString):
 	text = re.findall(r"[w0-9]{0,4}[\.]{0,1}[\w0-9\.]{1,}[\.][A-Za-z0-9]{1,}", fileReadString)
 	text = "\n".join(text)
 	return text
@@ -38,21 +40,27 @@ print('''
 ~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
  ''')
 
+#Taking in the input for file directories
 filePathRead = input("Enter the path of the SEARCH TO file, including desired filename and extension.\n")
 filePathAppend = input("\nEnter the path of the OUTPUT TO file, including desired filename and extension.\n")
+
+#Excepts errors when opening files
 try:
 	fileRead = open(filePathRead, "r", errors="ignore")
 	fileAppend = open(filePathAppend, "a")
 except:
-	print("An error occured! Make sure you typed your filename correctly the program has sufficient privilleges.")
+	print("An error occured! Make sure you typed your filename/directory correctly the program has sufficient privilleges.")
 	exit()
 
 fileReadString = fileRead.read()
- 
+
+#Method finder - takes user's input and activates each method
 userInput = input("Options:\n-dot: Find links, files, ips, etc.\nYou can select up to multiple options.\n")
 if("dot" in userInput):
-	fileAppend.write("===WEBSITES===\n")
-	fileAppend.write(WebSearch(fileReadString)+"\n")
+	print("\nSearching 'dot'...")
+	fileAppend.write("===DOT===\n")
+	fileAppend.write(DotSearch(fileReadString)+"\n")
 
+print("\nSearches completed! Exiting program...")
 fileRead.close()
 fileAppend.close()
