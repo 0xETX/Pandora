@@ -1,0 +1,4 @@
+-Fix a bug where the program closes after a single 'Open' port is found
+---NOTE: This is a result as of python 3.7.0, where the socket is sending an error
+
+-Fix the awkward spacing
