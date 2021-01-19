@@ -1,3 +1,4 @@
+#!/bin/python3
 #Made by Cristian Di Bartolomeo
 #Only scan with permission!
 
