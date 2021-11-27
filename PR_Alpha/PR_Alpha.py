@@ -1,5 +1,5 @@
 #!/bin/python3
-#Made by Cristian Di Bartolomeo
+#Made by 0xETX (0x03)
 #Only scan with permission!
 
 #Imports
